@@ -1,0 +1,7 @@
+1.insert product in database-- completed 
+2.edit product in databse -- completed
+3.fetch all product from database ---completed
+4.delete a product from database ---completed
+5.find product by id ---completed
+6.filter products on basis of price min and max --- completed
+7.add orders in database 
