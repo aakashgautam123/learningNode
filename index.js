@@ -15,11 +15,11 @@ app.use("/user", userRoutes);
 app.use("/product", productRoutes);
 //connecting to datbase
 async function connect() {
-  const db = await mongoose.connect("mongodb://localhost:27017/nodejs");
+  const db = await mongoose.connect(process.env.MONGO_URL);
 }
 
 connect();
 
-app.listen(3000, function() {
-  console.log("server started listening at port 5000");
+app.listen(process.env.PORT || 3000, function() {
+  console.log("server started listening at port 3000");
 });
